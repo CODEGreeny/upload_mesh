@@ -30,7 +30,7 @@ func main() {
 		File     string            `short:"f" long:"file"     value-name:"[path]" description:"The location of the file to be uploaded."`
 		Username string            `short:"u" long:"username" value-name:"[string]" optional:"false" description:"Username for logging in."`
 		Password string            `short:"p" long:"password" value-name:"[string]" optional:"false" description:"Password for logging in."`
-		Type     string            `short:"t" long:"type"     value-name:"[string]" optional:"true" default:"Model" description:"The type of file to upload. May be Model or Place."`
+		Type     string            `short:"t" long:"type"     value-name:"[string]" optional:"true" default:"Mesh" description:"The type of file to upload. May be Model or Place."`
 		Asset    uint              `short:"a" long:"asset"    value-name:"[id]" optional:"true" default:"0" description:"Asset ID to upload to. 0 creates a new asset. Places may only be updated, not created."`
 		Info     map[string]string `short:"i" long:"info"     value-name:"[key]:[value]" optional:"true" description:"If uploading a new model, this sets information about the model. i.e. '-i name:string -i description:string' sets the name and description."`
 		Skip     bool              `short:"s" long:"skip"     optional:"true" description:"Skip prompts."`
